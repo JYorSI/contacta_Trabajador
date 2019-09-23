@@ -54,16 +54,16 @@ function defaultMessage(senderId) {
             "id": senderId
         },
         "message": {
-            "text": "Hola soy un bot de messenger y te invito a utilizar nuestro menu",
+            "text": "Hola soy un bot y esta es una prueba ;)",
             "quick_replies": [
                 {
                     "content_type": "text",
-                    "title": "¿Quieres una Pizza?",
+                    "title": "¿Quieres ver memes?",
                     "payload": "PIZZAS_PAYLOAD"
                 },
                 {
                     "content_type": "text",
-                    "title": "Acerca de",
+                    "title": "Ayuda!",
                     "payload": "ABOUT_PAYLOAD"
                 }
             ]
