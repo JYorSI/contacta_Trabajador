@@ -59,12 +59,12 @@ function defaultMessage(senderId) {
                 {
                     "content_type": "text",
                     "title": "¿Quieres ver memes?",
-                    "payload": "GET_STARTED_PUGPIZZA"
+                    "payload": "PEPPERONI_PAYLOAD"
                 },
                 {
                     "content_type": "text",
                     "title": "Ayuda!",
-                    "payload": "LOCATIONS_PAYLOAD"
+                    "payload": "ABOUT_PAYLOAD"
                 }
             ]
         }
