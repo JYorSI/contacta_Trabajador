@@ -96,7 +96,7 @@
           event.preventDefault();
           
           const formData = $('#preferencesForm').serialize();
-          
+         
           $.post('/broadcast-to-chatfuel', formData, function (data) {
             MessengerExtensions.requestCloseBrowser(function () {
               console.log('Window will be closed');
@@ -104,7 +104,7 @@
               console.log('There is an error');
               console.log(error);
             });
-          });
+          });  
         });
         
       }

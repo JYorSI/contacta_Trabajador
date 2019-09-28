@@ -88,11 +88,11 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
   console.log(request.body);
 
   response.json({});
-  /*
-  const botId = process.env.CHATFUEL_BOT_ID;
-  const chatfuelToken = process.env.CHATFUEL_TOKEN;
   
-  const userId = '1950844914929171';
+  const botId = '5d88f1463392dd0001f0a90d';
+  const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
+  
+  const userId = '2462029343912626';
   const blockName = 'WebviewResponse';
   
   const broadcastApiUrl = `https://api.chatfuel.com/bots/${botId}/users/${userId}/send`;
@@ -119,7 +119,7 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
   requestPromise.post(options)
     .then(() => {
       response.json({});
-    });    */
+    });    
   
 });
 
