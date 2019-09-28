@@ -1,23 +1,32 @@
 {
-  "name": "pugpizza",
-  "version": "1.0.0",
-  "description": "bot de messenger para nuestra pizzeria",
-  "main": "app.js",
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "my-glitch-app",
+  "version": "0.0.1",
+  "description": "What am I about?",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node server.js"
   },
-  "author": "oscar barajas <oscar.barajas@platzi.com>",
-  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "request": "^2.88.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.3"
+    "body-parser": "1.18.2",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "pug": "^2.0.3",
+    "chatfuel-broadcast": "^1.1.0"
   },
   "engines": {
-    "node": "8.9.1"
-  }
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
