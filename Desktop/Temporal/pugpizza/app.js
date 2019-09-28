@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.get('/', function(req, response){
     //response.send('Hola Mundo!');
-    response.sendFile(path.join(__dirname+'/probar.html'));
+    respuesta.sendfile("probar.html");
 })
 
 
