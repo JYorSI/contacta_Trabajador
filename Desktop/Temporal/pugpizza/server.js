@@ -85,6 +85,10 @@ app.get('/show-webview', (request, response) => {
 });
 
 app.post('/broadcast-to-chatfuel', (request, response) => {
+  console.log(request.body);
+
+  response.json({});
+  /*
   const botId = process.env.CHATFUEL_BOT_ID;
   const chatfuelToken = process.env.CHATFUEL_TOKEN;
   
@@ -115,7 +119,7 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
   requestPromise.post(options)
     .then(() => {
       response.json({});
-    });
+    });    */
   
 });
 
