@@ -10,11 +10,12 @@ const app = express();
 app.set('port', (process.env.PORT || 5000 ));
 app.use(bodyParser.json());
 
+const path = require('path');
+
 app.get('/', function(req, response){
     //response.send('Hola Mundo!');
-    respuesta.sendfile("probar.html");
+    response.sendFile(path.join(__dirname+'/probar.html'));
 })
-
 
 app.get('/webhook', function(req, response){
     if(req.query['hub.verify_token'] === 'pugpizza_token'){
