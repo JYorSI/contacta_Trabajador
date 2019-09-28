@@ -11,8 +11,10 @@ app.set('port', (process.env.PORT || 5000 ));
 app.use(bodyParser.json());
 
 app.get('/', function(req, response){
-    response.send('Hola Mundoe!');
+    //response.send('Hola Mundo!');
+    response.sendFile(path.join(__dirname+'/probar.html'));
 })
+
 
 app.get('/webhook', function(req, response){
     if(req.query['hub.verify_token'] === 'pugpizza_token'){
