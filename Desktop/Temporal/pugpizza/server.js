@@ -41,8 +41,8 @@ const createButtons = (displayUrl) => {
             template_type: 'generic',
             image_aspect_ratio: 'square',
             elements: [{
-              title: 'Welcome!',
-              subtitle: 'Choose your preferences',
+              title: 'Bienvenido!',
+              subtitle: 'Quieres ver ofertones ↓',
               buttons:[
                 {
                   type: 'web_url',
@@ -173,7 +173,6 @@ app.post('/dynamic-webview-new', (request, response) => {
   const botId = '5d88f1463392dd0001f0a90d';
   const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
 
-  
   // Get user id and block name from request.body
   const {userId, blockName} = request.body;
   
