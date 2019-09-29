@@ -91,8 +91,9 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
   
   const botId = '5d88f1463392dd0001f0a90d';
   const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
+
   
-  const userId = {userId};
+  const userId = '2268975013230416';
   const blockName = 'WebviewResponse';
   
   const broadcastApiUrl = `https://api.chatfuel.com/bots/${botId}/users/${userId}/send`;
