@@ -53,6 +53,17 @@
         js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'Messenger'));
+
+
+
+          function getContext() {
+      MessengerExtensions.getContext('2482430665201465',function success(thread_context) {
+        var psid = thread_context.psid;
+        alert(JSON.stringify(psid));
+      }, function error(err, errorMessage) {
+        alert(JSON.stringify(errorMessage));
+      });
+    }
     </script>
     
     <main>
@@ -71,7 +82,7 @@
         <button type="submit">Submit</button>
       </form>
     
-    
+      <input type="button" onclick="getContext()" value="Obtener User ID" />
 
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
@@ -91,6 +102,8 @@
           const formData = $('#preferencesForm').serialize();
          
           $.post('/broadcast-to-chatfuel', formData, function (data) {
+
+
             MessengerExtensions.requestCloseBrowser(function () {
               console.log('Window will be closed');
             }, function (error) {

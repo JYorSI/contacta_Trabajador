@@ -88,6 +88,8 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
   console.log(request.body);
 
   response.json({});
+
+
   
   const botId = '5d88f1463392dd0001f0a90d';
   const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
@@ -96,6 +98,8 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
   const userId = '2782805971730947';
   const blockName = 'WebviewResponse';
   
+
+
   const broadcastApiUrl = `https://api.chatfuel.com/bots/${botId}/users/${userId}/send`;
   
   const query = Object.assign({
