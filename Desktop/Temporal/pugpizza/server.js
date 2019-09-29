@@ -47,23 +47,9 @@ const createButtons = (displayUrl) => {
                 {
                   type: 'web_url',
                   url: displayUrl,
-                  title: 'Webview (compact)',
+                  title: 'Ver Catalogo',
                   messenger_extensions: true,
                   webview_height_ratio: 'compact' // Small view
-                },
-                {
-                  type: 'web_url',
-                  url: displayUrl,
-                  title: 'Webview (tall)',
-                  messenger_extensions: true,
-                  webview_height_ratio: 'tall' // Medium view
-                },
-                {
-                  type: 'web_url',
-                  url: displayUrl,
-                  title: 'Webview (full)',
-                  messenger_extensions: true,
-                  webview_height_ratio: 'full' // large view
                 }
               ]
             }]
