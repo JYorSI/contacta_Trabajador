@@ -95,7 +95,7 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
   const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
 
   
-  const userId = '2782805971730947';
+  const userId = '2462029343912626';
   const blockName = 'WebviewResponse';
   
 
@@ -129,8 +129,12 @@ app.post('/broadcast-to-chatfuel', (request, response) => {
 });
 
 app.post('/dynamic-webview', (request, response) => {
-  const botId = process.env.CHATFUEL_BOT_ID;
-  const chatfuelToken = process.env.CHATFUEL_TOKEN;
+
+
+  const botId = '5d88f1463392dd0001f0a90d';
+  const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
+
+
   
   // Get user id and block name from request.body
   const {userId, blockName} = request.body;
@@ -165,8 +169,10 @@ app.post('/dynamic-webview', (request, response) => {
 
 // Using the new NPM module I created
 app.post('/dynamic-webview-new', (request, response) => {
-  const botId = process.env.CHATFUEL_BOT_ID;
-  const chatfuelToken = process.env.CHATFUEL_TOKEN;
+
+  const botId = '5d88f1463392dd0001f0a90d';
+  const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
+
   
   // Get user id and block name from request.body
   const {userId, blockName} = request.body;
