@@ -27,7 +27,7 @@ html
 
 
       input(type="checkbox" id="likes-bots" name="var1" value="yes" onchange='sumarProductos()')
-      label(for="likes-bots") Producto1
+      label(for="likes-bots") S./10 Producto1
 
       input(type="checkbox" id="likes-bots" name="var2" value="yes" onchange='sumarProductos()')
       label(for="likes-bots") Producto2
@@ -75,9 +75,9 @@ html
       if(document.getElementsByName("var1")[0].checked == true){
       var1 = 10; } else{  var1 = 0;}
       if(document.getElementsByName("var2")[0].checked == true){
-      var2 = 35; } else{  var2 = 0;}
+      var2 = 15; } else{  var2 = 0;}
       if(document.getElementsByName("var3")[0].checked == true){
-      var3 = 15; } else{  var3 = 0;}
+      var3 = 35; } else{  var3 = 0;}
       var precio=var1+var2+var3;
       document.getElementsByName("precio")[0].innerHTML = precio;
       var cupon = document.getElementsByName("cupon")[0].value;
