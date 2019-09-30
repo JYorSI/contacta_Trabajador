@@ -71,7 +71,9 @@ html
     script.
       function sumarProductos() {
       var var1,var2,var3;
-      alert(document.getElementsByName("var1")[0].checked) }
+      if(document.getElementsByName("var1")[0].checked == true){
+      var1 = 10; alert(var1);} else{ var var1 = 0;}
+      alert(var1); }
 
     script(src="https://code.jquery.com/jquery-2.2.1.min.js",
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=",
