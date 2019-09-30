@@ -26,20 +26,20 @@ html
     form(id="preferencesForm")
 
 
-      input(type="checkbox" id="likes-bots" name="var1" value="yes" onchange='sumarProductos()')
+      input(type="checkbox" id="likes-bots" name="var1" value="Si" onchange='sumarProductos()')
       label(for="likes-bots") Prod1 S./10 
 
-      input(type="checkbox" id="likes-bots" name="var2" value="yes" onchange='sumarProductos()')
+      input(type="checkbox" id="likes-bots" name="var2" value="Si" onchange='sumarProductos()')
       label(for="likes-bots") Prod2 S./15 
 
-      input(type="checkbox" id="likes-bots" name="var3" value="yes" onchange='sumarProductos()')
+      input(type="checkbox" id="likes-bots" name="var3" value="Si" onchange='sumarProductos()')
       label(for="likes-bots") Prod3 S./35 
 
       br
 
-
+      input(type="checkbox" id="likes-bots" name="precio" value="" readonly)
       p Precio sin descuento
-      p(name="precio") 0
+
 
       p Precio con descuento
       p(name="descuento") 0
