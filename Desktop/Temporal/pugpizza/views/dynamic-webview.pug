@@ -81,8 +81,10 @@ html
       var precio=var1+var2+var3;
       document.getElementsByName("precio")[0].innerHTML = precio;
       var cupon = document.getElementsByName("cupon")[0].value;
-      var descuento = (var1+var2+var3)*cupon;
-      document.getElementsByName("descuento")[0].innerHTML = var1+var2+var3-descuento;
+      var descuento =0;
+      if(cupon== "CUPON2019"){
+      descuento = 0.5; } else{  descuento = 0;}
+      document.getElementsByName("descuento")[0].innerHTML = precio*descuento;
       }
 
     script(src="https://code.jquery.com/jquery-2.2.1.min.js",
