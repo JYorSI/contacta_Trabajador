@@ -49,7 +49,7 @@ const createButtons = (displayUrl) => {
                   url: displayUrl,
                   title: 'Ver Catalogo',
                   messenger_extensions: true,
-                  webview_height_ratio: 'compact' // Small view
+                  webview_height_ratio: 'full' // Small view
                 }
               ]
             }]
