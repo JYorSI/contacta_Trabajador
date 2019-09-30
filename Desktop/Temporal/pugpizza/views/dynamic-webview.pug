@@ -38,9 +38,11 @@ html
       br
       br
 
-
-      S./ p(name="precio") 0
-
+      p Precio sin descuento
+      p(name="precio") 0
+      br
+      p Precio con descuento
+      p(name="descuento") 0
 
       br
       br
@@ -51,7 +53,7 @@ html
       br
       br
 
-      input(type="input" id="likes-bots" name="cupon" value="-")
+      input(type="input" id="likes-bots" name="cupon" value="-" onchange='sumarProductos()')
       label(for="likes-bots") Cupon de descuento
 
       br 
@@ -76,8 +78,11 @@ html
       var2 = 35; } else{  var2 = 0;}
       if(document.getElementsByName("var3")[0].checked == true){
       var3 = 15; } else{  var3 = 0;}
-      alert(var1+var2+var3);
-      document.getElementsByName("precio")[0].innerHTML = var1+var2+var3;
+      var precio=var1+var2+var3;
+      document.getElementsByName("precio")[0].innerHTML = precio;
+      var cupon = document.getElementsByName("cupon")[0].value;
+      var descuento = (var1+var2+var3)*cupon;
+      document.getElementsByName("descuento")[0].innerHTML = var1+var2+var3-descuento;
       }
 
     script(src="https://code.jquery.com/jquery-2.2.1.min.js",
