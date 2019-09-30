@@ -24,14 +24,24 @@ html
     h2 Selecciona tus productos
     
     form(id="preferencesForm")
-      input(type="checkbox" id="likes-bots" name="var1" value="yes")
+
+
+      input(type="checkbox" id="likes-bots" name="var1" value="yes" onchange='sumarProductos()')
       label(for="likes-bots") Producto1
 
-      input(type="checkbox" id="likes-bots" name="var2" value="yes")
+      input(type="checkbox" id="likes-bots" name="var2" value="yes" onchange='sumarProductos()')
       label(for="likes-bots") Producto2
 
-      input(type="checkbox" id="likes-bots" name="var3" value="yes")
+      input(type="checkbox" id="likes-bots" name="var3" value="yes" onchange='sumarProductos()')
       label(for="likes-bots") Producto3
+
+      br
+      br
+
+      p(name="text") S/.
+
+      p(name="precio") 0
+
 
       br
       br
@@ -84,5 +94,20 @@ html
                 });
             });
         };
+
+
+
+        script.
+  function sumarProductos() {
+  var var1,var2,var3;
+  if(document.getElementsByName("var1")[0].checked == true){
+  var1 = 10; alert(var1);} else{ var var1 = 0;}
+  if(document.getElementsByName("var2")[0].checked == true){
+  var2 = 20;} else{ var var2 = 0;}
+  if(document.getElementsByName("var3")[0].checked == true){
+  var3 = 30;} else{ var var3= 0;}
+  document.getElementsByName("precio")[0].innerHTML = var1+var2+var3;
+  }
+
 
     
