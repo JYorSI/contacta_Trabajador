@@ -1,0 +1,51 @@
+
+-Crear el repositorio
+-npm init (En el directorio)
+-instalar: express (para crear el webhook) y body-parser (para manejar el flujo de datos recibidos y enviados)
+-npm install express body-parser request
+-Crear archivo app.js (Codearlo)
+-Correr archivo para probar (node app.js)
+
+-npm install -g nodemon
+-sudo su (si es que pide permisos)
+
+Especificar que se grabe el entorno de desarrollo y se añada a nuestro proyecto:
+npm install --save-dev nodemon
+Para que nuestro servidor se mantenga siempre ejecutando:
+nodemon app.js
+
+ngrok (es para exponer nuestro servidor local en una url)
+En una nueva ventana de consola para no matar el nodemon:
+cd desktop\develop\pugpizza
+ngrok http 5000
+nos genera url, ejemplo:  https://3c979db3.ngrok.io
+
+------------------------------------------------------------------
+PUBLICARLO EN HEROKU
+------------------------------------------------------------------
+- Instalar Heroku CLI
+- En el directorio: heroku login
+- Escribir el comando: heroku create NombreDelProyecto
+- Unir nuestro repo local al remoto de heroku:
+  heroku git:remote -a pugpizza
+- Añadir en el package.json
+   "start": "node app.js"
+   "engines": { "node": "10.16.3" }  //La version deseada
+- git add .
+- git commit -m "mypugpizza lives"
+- git push heroku master
+
+
+------------
+Chatfuel & Facebook Messenger
+------------
+Facebook:
+- Entrar a la configuración -> Plat. de Messenger -> White List  
+ChatFuel:
+Agregar URL en configuración -> Messenger Extensions & White List
+
+------------
+Chatfuel & Facebook Messenger 2
+------------
+- Instalar el lenguaje de plantillas pug: npm install
+

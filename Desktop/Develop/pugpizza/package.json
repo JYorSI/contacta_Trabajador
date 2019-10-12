@@ -1,0 +1,25 @@
+{
+  "name": "pugpizza",
+  "version": "1.0.0",
+  "description": "Bot de messenger para pizzeria",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Jose Gutierrez Bustamante",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "engines": {
+    "node": "10.16.3"
+  }
+}
+
+
+
