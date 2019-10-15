@@ -1,3 +1,6 @@
+
+ESTOS COMANDOS SE INSERTAN DESDE GIT BASH:
+
 // Mensaje de bienvenida y boton empezar:
 
 curl -X POST -H"Content-Type: application/json" -d '{
@@ -5,13 +8,13 @@ curl -X POST -H"Content-Type: application/json" -d '{
   "greeting": [
     {
       "locale":"default",
-      "text":"Hola {{user_first_name}}, si estas buscando aumentar tus ventas estas en la pagina adecuada. Un Chat Bot es la solucion"
+      "text":"Hola {{user_first_name}}, si estas buscando novedades en tecnología y encontrar accesorios tecnológicos estas en la pagina adecuada. "
     }, {
       "locale":"en_US",
-      "text":"hi {{use_first_name}}"
+      "text":"Hi {{use_first_name}}, this is a Peruvian page! We have technological news and accessories"
     }
   ]
-}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAjRwe36lzkBAH4nnUFHGCOZAnLvKD0fhytOx4kJsBYv5GNaTrmDKv5omnVZBytsU8UKynq3sX1rpdZCyMicdDYTDYyjCk0asxyub5O2t00L3TD5X8DPCiXOaA3xwXBCeUKF1W1yWavtsgbfM3gy63o3ZAOBFdrgKIKZAHft9ZA8MaOQI0G3lI"
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAGEAxy3i4UBAJWmEay9umCGvrL1TU6PSJ59ElmrY2iw1lwhGMwlfBo4v6fw6Ngz1AXZCHzTl8mqaNKdDiVT0w08IdFcsPTFTTCyhZCHW6eoNjm1ZAZBCMdyRPuYdbZAbkAONGp079ZA1N5ejdF0qBUFUn6PlNwsa99SdBHBKlLzBB962FVRDj" 
 
 
 // Menu persistente
@@ -22,7 +25,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
   "locale": "default",
   "composer_input_disabled": false,
   "call_to_actions": [{
-      "title": "🍕 PugPizza ",
+      "title": "Perú Tecnológico",
       "type": "nested",
       "call_to_actions": [{
           "title": "Acerca",
@@ -80,7 +83,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
   ]
 }]
 }
-' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAjRwe36lzkBAH4nnUFHGCOZAnLvKD0fhytOx4kJsBYv5GNaTrmDKv5omnVZBytsU8UKynq3sX1rpdZCyMicdDYTDYyjCk0asxyub5O2t00L3TD5X8DPCiXOaA3xwXBCeUKF1W1yWavtsgbfM3gy63o3ZAOBFdrgKIKZAHft9ZA8MaOQI0G3lI"
+' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAGEAxy3i4UBAJWmEay9umCGvrL1TU6PSJ59ElmrY2iw1lwhGMwlfBo4v6fw6Ngz1AXZCHzTl8mqaNKdDiVT0w08IdFcsPTFTTCyhZCHW6eoNjm1ZAZBCMdyRPuYdbZAbkAONGp079ZA1N5ejdF0qBUFUn6PlNwsa99SdBHBKlLzBB962FVRDj"
 
 
 
