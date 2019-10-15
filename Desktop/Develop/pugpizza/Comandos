@@ -8,7 +8,7 @@ curl -X POST -H"Content-Type: application/json" -d '{
   "greeting": [
     {
       "locale":"default",
-      "text":"Hola {{user_first_name}}, si estas buscando novedades en tecnología y encontrar accesorios tecnológicos estas en la pagina adecuada. "
+      "text":"Hola {{user_first_name}}, si estas buscando novedades en tecnologia y encontrar accesorios tecnologicos estas en la pagina adecuada. "
     }, {
       "locale":"en_US",
       "text":"Hi {{use_first_name}}, this is a Peruvian page! We have technological news and accessories"
